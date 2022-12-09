@@ -7,7 +7,7 @@ class NationalWaterLevelForecastBrazil(TethysAppBase):
     """
 
     name = 'National Water Level Forecast Brazil'
-    index = 'national_water_level_forecast_brazil:home'
+    index = 'home'
     icon = 'national_water_level_forecast_brazil/images/national_water_level_forecast_brazil.jpeg'
     package = 'national_water_level_forecast_brazil'
     root_url = 'national-water-level-forecast-brazil'
