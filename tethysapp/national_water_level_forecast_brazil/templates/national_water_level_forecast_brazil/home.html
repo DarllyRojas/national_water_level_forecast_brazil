@@ -158,17 +158,10 @@
   role="dialog"
   aria-labelledby="about-modal-label"
 >
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button
-          type="button"
-          class="close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
+
         <div class="row">
           <div id="station-info" class="col-md-8"></div>
           <div class="col-md-4">
@@ -189,6 +182,8 @@
           </div>
           <div id="interaction"></div>
         </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
       </div>
       <div class="modal-body">
         <!-- Nav tabs -->
@@ -577,20 +572,15 @@
   role="dialog"
   aria-labelledby="help-modal-label"
 >
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button
-          type="button"
-          class="close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
+
         <h5 class="modal-title" id="help-modal-label">
           National Water Level Forecast
         </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
       </div>
       <div class="modal-body">
         <p>
