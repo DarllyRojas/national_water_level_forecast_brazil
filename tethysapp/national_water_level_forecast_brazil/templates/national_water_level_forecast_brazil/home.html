@@ -96,7 +96,7 @@ plotly_view %} {% endblock %} {% block app_content %}
       {# Search button #}
       <div>
         <button id="search-btn" style="width: 100%">
-          <span class="glyphicon glyphicon-search"></span>
+          <i class="bi bi-search"></i>
         </button>
       </div>
 
@@ -132,8 +132,7 @@ plotly_view %} {% endblock %} {% block app_content %}
   title="View Graph"
 >
   <a data-toggle="modal" data-target="#obsgraph"
-    ><span class="glyphicon glyphicon-globe"></span
-  ></a>
+    ><<i class="bi bi-globe"></i></a>
 </div>
 <div
   class="header-button glyphicon-button"
@@ -142,8 +141,7 @@ plotly_view %} {% endblock %} {% block app_content %}
   title="Help"
 >
   <a data-toggle="modal" data-target="#help-modal"
-    ><span class="glyphicon glyphicon-question-sign"></span
-  ></a>
+    ><i class="bi bi-question-diamond"></i></a>
 </div>
 {% endblock %} {# Use the after_app_content block for modals #} {% block
 after_app_content %}
@@ -256,7 +254,7 @@ after_app_content %}
                       role="button"
                       id="submit-download-observed-water-level"
                     >
-                      <span class="glyphicon glyphicon-play"></span> Observed
+                    <i class="bi bi-play-circle-fill"></i> Observed
                       Water Level
                     </a>
                   </div>
@@ -270,7 +268,7 @@ after_app_content %}
                       role="button"
                       id="submit-download-simulated-bc-water-level"
                     >
-                      <span class="glyphicon glyphicon-play"></span> Corrected
+                    <i class="bi bi-play-circle-fill"></i> Corrected
                       Simulated Water Level
                     </a>
                   </div>
@@ -342,7 +340,7 @@ after_app_content %}
                   {% endfor %}
                 </select>
                 <br />
-                <h4>
+                <p>
                   <button type="button" class="btn btn-success" id="make-table">
                     Add Metrics to List</button
                   ><br /><br />
@@ -356,13 +354,19 @@ after_app_content %}
                     Correlation Coefficient, and Coefficient of Determination.
                   </p>
                   Optional Parameters
-                  <span
+                  <i
+                  style="font-size: 15px"
+                  class="bi bi-info-circle"
+                  title="Optional parameter input boxes will appear here if a metric with optional parameters is selected."
+                  >
+                  </i>
+                  <!-- <span
                     style="font-size: 15px"
                     class="glyphicon glyphicon-info-sign icon_info"
                     title="Optional parameter input boxes will appear here if a metric with optional parameters is selected."
                   >
-                  </span>
-                </h4>
+                  </span> -->
+                </p>
                 <div class="form-row" id="mase_param_div" style="display: none">
                   <div class="form-group col-md-12" id="MASE_form">
                     <label for="mase_m">Mean Absolute Squared M Value</label>
@@ -528,7 +532,7 @@ after_app_content %}
                     role="button"
                     id="submit-download-forecast-bc"
                   >
-                    <span class="glyphicon glyphicon-play"></span> Download
+                  <i class="bi bi-play-circle-fill"></i> Download
                     Forecast
                   </a>
                 </div>
@@ -542,7 +546,7 @@ after_app_content %}
                     role="button"
                     id="submit-download-forecast-bc-ensemble"
                   >
-                    <span class="glyphicon glyphicon-play"></span> Download
+                  <i class="bi bi-play-circle-fill"></i> Download
                     Forecast Ensemble
                   </a>
                 </div>
